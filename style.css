@@ -1,6 +1,63 @@
-.calcWrapper {
-    background-color: black;
+body {
+    padding-top: 150px;
+    background-color: rgb(235, 233, 233);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+}
+.parentWrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr;
+    margin: auto;
+    width: 50%;
+    height: 50vh;
+    gap: 0px;
+    border-color: black;
+    border-width: 1px;
+    border: solid;
+}
+.displayWrapper {
+    font-size: 24px;
+    display: flex;
+    border-color: black;
+    border-width: 1px;
+    border-bottom: solid;
+    justify-content: flex-end;;
+    background-color: blanchedalmond;
+    height: auto;
+}
+
+#display {
+    align-self: flex-end;
+ }
+
+.buttonWrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . equal equal";
+    justify-content: space-evenly;
+    align-content:stretch;
+    padding: 0;
+    height: auto;
+}
+
+#equal{
+    grid-area: equal;
+}
+
+button {
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(128, 126, 126);
+}
+
+button:hover {
+    /* background-color: rgb(255, 136, 0); */
+    box-shadow: 1px 1px 5px black;
 }
